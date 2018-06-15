@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_91d618caa40d4d2fa8841f2165b61e02 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_91d618caa40d4d2fa8841f2165b61e02" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_91d618caa40d4d2fa8841f2165b61e02 = L.map(
+                                  'map_91d618caa40d4d2fa8841f2165b61e02',
+                                  {center: [49.84441000000004,24.02543000000003],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1abb436c403c4346952714b5ccb4f5c8 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_941d96ed6cd84781bf6d21d4c8a4e2bb = L.heatLayer(
+                [[49.84433902608349, 24.03595826816284], [49.84441000000004, 24.02543000000003], [49.84441000000004, 24.02543000000003], [49.84441000000004, 24.02543000000003], [49.84685141046816, 24.027688915372917], [49.84441000000004, 24.02543000000003], [49.8520777288074, 24.05189422993258], [49.81586100012117, 24.025704124343747], [49.84441000000004, 24.02543000000003], [49.83898619126872, 24.034603005712825], [49.81586100012117, 24.025704124343747], [49.81586100012117, 24.025704124343747], [49.848693051850255, 24.027341450513372], [49.77800752455273, 24.013939617878446], [49.82271195930985, 24.005990754300765], [49.81586100012117, 24.025704124343747], [49.84847355570642, 24.025877876358845], [49.84441000000004, 24.02543000000003], [49.84441000000004, 24.02543000000003], [49.84441000000004, 24.02543000000003], [46.84357383014023, 35.37047618070846], [49.85814557063308, 24.027128823734955], [49.842636975612606, 24.062721463336985], [49.84441000000004, 24.02543000000003], [49.8520777288074, 24.05189422993258], [49.85359913260082, 24.019776546572626], [49.79665874519604, 24.06876193787837], [49.85288518579009, 24.019863867484176], [49.843396058283815, 24.015898738011334], [49.82700184395734, 24.510616460390874]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "green", "0.3": "red", "0.65": "blue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_4af2d517e38c4c908e9cb918bc819df1 = L.heatLayer(
+                [[49.82603453909656, 24.027344213636262], [49.81510330843472, 24.025571254245996], [49.846202674995645, 23.976614361244046], [49.83128389203072, 24.033053748975608], [49.845963301035454, 23.976579961532266], [49.83128389203072, 24.033053748975608]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkred", "0.3": "purple", "0.65": "orange"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_476b428dbffa414b91df2bb8d099e642 = L.heatLayer(
+                [[49.81910243825374, 24.133855604910853], [49.846865992786654, 23.97014624190646], [49.84153587079216, 24.025625543304454], [49.81910243825374, 24.133855604910853]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkblue", "0.3": "lightred", "0.65": "beige"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_4fdf124f6ffd419ba95ed6692f9a3d96 = L.heatLayer(
+                [[49.83834587416818, 23.899507804165598], [49.54047791152696, 23.97134122907995], [49.83834587416818, 23.899507804165598], [49.83336174937963, 24.038986164723866], [49.80623400000001, 24.89656014282967]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkpurple", "0.3": "darkgreen", "0.65": "cadetblue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_93217ce5984f44c2a3563b3fb090e6ee = L.heatLayer(
+                [[49.84155612851283, 24.0253230745282], [49.82525038440744, 23.989801883492976], [50.4017930533665, 24.444918091710317], [49.80323553837543, 24.00364600100962], [49.82940331975289, 23.993037017600727], [49.8520777288074, 24.05189422993258], [49.84043802331354, 24.015468125887118], [49.81586100012117, 24.025704124343747], [49.85726240853493, 24.02116674666792], [49.83128389203072, 24.033053748975608], [49.83732013737097, 24.035930534681825], [49.80323553837543, 24.00364600100962], [49.845963301035454, 23.976579961532266], [49.83776155536961, 24.03510942105707]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "lightblue", "0.3": "white", "0.65": "pink"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_d8ac85f1af4c4cc49de3c6a22e51dd76 = L.heatLayer(
+                [[49.84809426755725, 24.01531548739096], [49.80999441661366, 23.97466114224706]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "black", "0.3": "lightgreen", "0.65": "gray"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_aecfaa2e9eae4f05bffd44c5915cf5e1 = L.heatLayer(
+                [[49.54047791152696, 23.97134122907995], [49.83709854203942, 24.017745903543265]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "green", "0.3": "red", "0.65": "blue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_c07da982167344469e5d64ff401b8221 = L.heatLayer(
+                [[49.84012381822369, 24.021856244272392]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkred", "0.3": "purple", "0.65": "orange"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_2edc62725b5b444485c180af43503f3a = L.heatLayer(
+                [[49.860834663338885, 24.031026601592632], [49.82352673884805, 24.052448135466392], [49.841459933925975, 24.03230002943039], [49.84533201110851, 24.02520589771489], [49.860834663338885, 24.031026601592632]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkblue", "0.3": "lightred", "0.65": "beige"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_605d291839c641f7bd1d661b2dbb1cc9 = L.heatLayer(
+                [[49.81910243825374, 24.133855604910853], [49.83776330694229, 24.02551471236054], [49.810138206186906, 24.004431267902]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkpurple", "0.3": "darkgreen", "0.65": "cadetblue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_848f5a63c19e49deac695d1dd8da4276 = L.heatLayer(
+                [[49.81510330843472, 24.025571254245996], [49.824090688806415, 24.051107343372365], [49.8477222955515, 24.0204502316912]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "lightblue", "0.3": "white", "0.65": "pink"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_9939e5a080fe41b1850d169ef13ac699 = L.heatLayer(
+                [[49.80082591497567, 24.028805776236972], [49.846202674995645, 23.976614361244046], [49.84441000000004, 24.02543000000003]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "black", "0.3": "lightgreen", "0.65": "gray"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_76966443256c4f92a9da00bb5915ac3a = L.heatLayer(
+                [[49.8375517146978, 24.025033751572664], [49.80999441661366, 23.97466114224706]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "green", "0.3": "red", "0.65": "blue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_3f7b133d66b741c6b01de4fe6014de4b = L.heatLayer(
+                [[50.06085551731226, 23.956860221622716]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkred", "0.3": "purple", "0.65": "orange"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_8b6dfae0cd294f15a724f9f60962e863 = L.heatLayer(
+                [[49.81586100012117, 24.025704124343747]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkblue", "0.3": "lightred", "0.65": "beige"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_a42e89ec6ba44feca49390c7f496427f = L.heatLayer(
+                [[49.802676398868726, 24.011658795458406]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkpurple", "0.3": "darkgreen", "0.65": "cadetblue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_75f035b3574944f695e49523f2413829 = L.heatLayer(
+                [[49.82917000000003, 23.960090000000037]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "lightblue", "0.3": "white", "0.65": "pink"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_99c55e9bd3784936acc709b170a0d3e2 = L.heatLayer(
+                [[49.82689158339111, 24.028392600202462]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "black", "0.3": "lightgreen", "0.65": "gray"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_f05510ad027e4d53a39a6e101e09c62a = L.heatLayer(
+                [[49.851161534857, 24.025907185404204]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "green", "0.3": "red", "0.65": "blue"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_8d099ee10ba54e11ba023b852d5efc23 = L.heatLayer(
+                [[49.851430502077484, 24.059599852213026]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkred", "0.3": "purple", "0.65": "orange"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+    
+            var heat_map_6f7280e2e00944fd8fb9a646341b2837 = L.heatLayer(
+                [[49.80623400000001, 24.89656014282967]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: {"0.1": "darkblue", "0.3": "lightred", "0.65": "beige"}
+                    })
+                .addTo(map_91d618caa40d4d2fa8841f2165b61e02);
+        
+</script>

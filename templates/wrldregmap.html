@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ac8df4b2784c44148e044baa75c4d632 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ac8df4b2784c44148e044baa75c4d632" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_ac8df4b2784c44148e044baa75c4d632 = L.map(
+                                  'map_ac8df4b2784c44148e044baa75c4d632',
+                                  {center: [49.84441000000004,24.02543000000003],
+                                  zoom: 8,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_2154824b156b466aa000b28abda44750 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_ac8df4b2784c44148e044baa75c4d632);
+        
+    
+            var marker_cluster_6587b16cbab340cbbfcdeefb01b26864 = L.markerClusterGroup({
+                
+            });
+            map_ac8df4b2784c44148e044baa75c4d632.addLayer(marker_cluster_6587b16cbab340cbbfcdeefb01b26864);
+            
+    
+
+            var marker_ce18e6b786734dbea4cf4331f0f01bb8 = L.marker(
+                [49.54047791152696,23.97134122907995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_6587b16cbab340cbbfcdeefb01b26864);
+            
+    
+
+                var icon_56d45655b31640128bb3aad82b6c1895 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce18e6b786734dbea4cf4331f0f01bb8.setIcon(icon_56d45655b31640128bb3aad82b6c1895);
+            
+    
+            var popup_7d176cb2ce0347b0b09126551f79af49 = L.popup({maxWidth: '300'});
+
+            
+                var html_dc9ab036413c40fc99dd8b083bd08167 = $('<div id="html_dc9ab036413c40fc99dd8b083bd08167" style="width: 100.0%; height: 100.0%;">Танці<br>FB: https://www.facebook.com/sharer/sharer.php?u=https://2event.com/uk/events/1437249<br>Start Time: Початок - 16 Черв 2018, 20:00<br></div>')[0];
+                popup_7d176cb2ce0347b0b09126551f79af49.setContent(html_dc9ab036413c40fc99dd8b083bd08167);
+            
+
+            marker_ce18e6b786734dbea4cf4331f0f01bb8.bindPopup(popup_7d176cb2ce0347b0b09126551f79af49);
+
+            
+        
+    
+
+            var marker_7d2f00b085324402ab79ade4a7dd8701 = L.marker(
+                [49.83709854203942,24.017745903543265],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_6587b16cbab340cbbfcdeefb01b26864);
+            
+    
+
+                var icon_e25473895c214e2980e6175d03aa821f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d2f00b085324402ab79ade4a7dd8701.setIcon(icon_e25473895c214e2980e6175d03aa821f);
+            
+    
+            var popup_34d95f5d30474c0eb3b45505a6666563 = L.popup({maxWidth: '300'});
+
+            
+                var html_b7c23de0c8f44ad5b73e9aa2f69b207c = $('<div id="html_b7c23de0c8f44ad5b73e9aa2f69b207c" style="width: 100.0%; height: 100.0%;">Танці<br>FB: https://www.facebook.com/sharer/sharer.php?u=https://2event.com/uk/events/1374543<br>Start Time: Початок - 24 Серп 2018, 17:55<br></div>')[0];
+                popup_34d95f5d30474c0eb3b45505a6666563.setContent(html_b7c23de0c8f44ad5b73e9aa2f69b207c);
+            
+
+            marker_7d2f00b085324402ab79ade4a7dd8701.bindPopup(popup_34d95f5d30474c0eb3b45505a6666563);
+
+            
+        
+    
+            var layer_control_9b28e8bf6119495794f10239557369d1 = {
+                base_layers : { "openstreetmap" : tile_layer_2154824b156b466aa000b28abda44750, },
+                overlays : { "Танці" : marker_cluster_6587b16cbab340cbbfcdeefb01b26864, }
+                };
+            L.control.layers(
+                layer_control_9b28e8bf6119495794f10239557369d1.base_layers,
+                layer_control_9b28e8bf6119495794f10239557369d1.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_ac8df4b2784c44148e044baa75c4d632);
+        
+</script>
